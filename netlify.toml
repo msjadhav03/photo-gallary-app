@@ -1,6 +1,5 @@
 [build]
    command = "npm install"
+   functions="/server/server.js"
    publish = "/client/public" # Replace with your client's build output directory
-[functions]
-  directory = "/server"
 
