@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors())
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/home', express.static(path.join(__dirname, 'public')));
 
 // API endpoint
 app.use('/', require('./src/routes'))
